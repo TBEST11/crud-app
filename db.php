@@ -11,7 +11,7 @@ class Database{
     public function __construct(){
         try{
             $dbHost = "localhost"; $dbName = "php_crud_app"; $dbUser = "root"; $dbPass = "";
-            $this->conn = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass);
+            $this->conn =  new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass);
         }
       catch(PDOException $e){
        echo $e->getMessage(); 
